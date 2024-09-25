@@ -15,10 +15,6 @@ CriX is an all-in-one cricket platform that provides the latest updates on crick
 - **JavaScript**: Interactive elements and dynamic content.
 - **Visual Studio Code**: Primary IDE for development.
 
-## Demo
-### Video
-You can watch a demo of the project by [clicking here](#). (Include the link to the demo video.)
-
 ### Image
 **Image1**
 ![Project Demo](https://github.com/user-attachments/assets/0acf35ec-9801-4479-b356-8294766d9393)
