@@ -204,7 +204,7 @@ html {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 30px;
-    color: #f0f0f0;
+    color: #3d3333;
 }
 
 .welcome-content:hover {
@@ -749,53 +749,40 @@ html {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 0px;
-    margin-right: auto;
     margin-bottom: 50px;
-    margin-left: auto;
     padding-top: 0px;
-    padding-right: 0px;
     padding-bottom: 0px;
-    padding-left: 0px;
   }
   
   .contact_us_2 .responsive-container-block.big-container {
-    padding-top: 10px;
-    padding-right: 30px;
     padding-bottom: 10px;
-    padding-left: 30px;
     position: relative;
     height: auto;
   }
   
   .contact_us_2 .responsive-container-block.container {
     position: static;
+    margin-right: 15px;
     min-height: 75px;
     flex-direction: column;
     z-index: 2;
     max-width: 800px;
-    margin-top: 120px;
-    margin-right: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: auto;
   }
   
   .contact_us_2 .container-block.form-wrapper {
     background-color: white;
     max-width: 799px;
     text-align: center;
-    padding-top: 50px;
-    padding-right: 40px;
     padding-bottom: 50px;
-    padding-left: 40px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    margin-top: 0px;
-    margin-right: auto;
     margin-bottom: 0px;
-    margin-left: auto;
+
   }
   
   .contact_us_2 .text-blk.contactus-head {
@@ -821,7 +808,7 @@ html {
   }
   
   .contact_us_2 .input {
-    width: 96%;
+    width: 80%;
     height: 50px;
     padding-top: 1px;
     padding-right: 15px;
@@ -845,11 +832,13 @@ html {
     border-image-outset: initial;
     border-image-repeat: initial;
     font-size: 16px;
-    color: black;
+    color: rgb(165, 150, 150);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
   .contact_us_2 .textinput {
@@ -881,6 +870,8 @@ html {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
   .contact_us_2 .submit-btn {
@@ -947,7 +938,7 @@ html {
     margin-right: 0px;
     margin-bottom: 5px;
     margin-left: 0px;
-    color: #9c9c9c;
+    color: #363434;
   }
   
   .contact_us_2 ::placeholder {
