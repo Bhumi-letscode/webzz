@@ -238,7 +238,6 @@ html {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Add a dark overlay */
     z-index: 0;
 }
 
@@ -282,6 +281,100 @@ html {
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* about */
+.about-section {
+    background: linear-gradient(135deg, #3b6d96, #3b6d96);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.about-stats {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 70px;
+    height: 50vh;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-stats:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.about-stats p {
+    font-size: 1.1rem;
+    color: #d0dde6;
+}
+
+.about-stats h2 {
+    font-size: 1.8rem;
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 3rem;
+    margin: 0;
+    color: #298bdb;
+}
+
+.stat p {
+    margin: 5px 0 0;
+    font-size: 1.4rem;
+    color: #9fcdfa;
+}
+
 /* Opportunity Section */
 .opportunities-section {
     display: flex;
@@ -296,6 +389,7 @@ html {
     height: 70vh;
     position: relative;
 }
+
 
 .opportunity {
     text-align: center;
@@ -355,6 +449,120 @@ html {
 .btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* news section */
+.news-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: #b8c8fa;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.news-content h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Add space above the button */
+}
+
+.button-64 {
+    align-items: center;
+    background-image: linear-gradient(144deg, #9cc7e4 50%, #5eb1e0);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+    outline: 0;
+}
+
+.button-64 span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-64:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+        font-size: 24px;
+        min-width: 196px;
+    }
 }
 
 /* Follow us */
@@ -652,110 +860,5 @@ html {
 
     100% {
         background-positon-x: 0px;
-    }
-}
-
-/* Testimonials-section */
-.testimonial-section {
-    width: 80%;
-    margin: auto;
-    /* Center the section */
-}
-
-.swiper-container {
-    overflow: visible;
-    /* Allow visible overflow for the testimonials */
-}
-
-.swiper-wrapper {
-    display: flex;
-    /* Make sure slides are in a horizontal row */
-}
-
-.swiper-slide {
-    position: relative;
-    width: 300px;
-    /* Fixed width for each slide */
-    height: 300px;
-    /* Fixed height for each slide */
-    margin: 0 10px;
-    /* Space between slides */
-}
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    /* Rounded corners */
-    background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
-    padding: 20px;
-    position: relative;
-    transition: transform 0.3s;
-    /* Smooth transition for hover effect */
-}
-
-.testimonial:hover {
-    transform: translateY(-10px);
-    /* Lift effect on hover */
-}
-
-.testimonial .fas {
-    font-size: 30px;
-    /* Larger icon */
-    color: #fff;
-    /* Change color for better visibility */
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.testimonial-text {
-    font-size: 18px;
-    line-height: 1.4;
-    text-align: center;
-    color: #fff;
-    /* White text for contrast */
-    margin: 15px 0;
-}
-
-.testimonial-user {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-
-    .user-img {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-    }
-
-    .user-info {
-        margin-left: 15px;
-        display: flex;
-        flex-direction: column;
-
-        .user-name {
-            font-weight: bold;
-            color: #fff;
-            /* White text for contrast */
-        }
-
-        .user-job-details {
-            display: flex;
-            align-items: center;
-            color: #fff;
-            /* White text for contrast */
-
-            .line {
-                width: 2px;
-                height: 15px;
-                background: #fff;
-                /* White line */
-                margin: 0 10px;
-            }
-        }
     }
 }
