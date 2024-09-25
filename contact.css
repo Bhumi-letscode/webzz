@@ -55,6 +55,78 @@ header {
     color: #fff;
 }
 
+/* Dropdown Menu with 3D Effect and Colorful Design */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(145deg, #84b0e2, #b9d7f3);
+    /* Gradient Background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(0, 0, 0, 0.1);
+    /* 3D Shadow */
+    border-radius: 10px;
+    width: 280px;
+    padding: 12px 0;
+    z-index: 1000;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Smooth hover animation */
+    opacity: 0;
+    /* Hidden by default */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: scale(1);
+    /* Scale to full size on hover */
+    opacity: 1;
+    /* Fade in on hover */
+}
+
+/* Styling dropdown items */
+.dropdown-menu li {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Semi-transparent divider */
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+    /* No border for the last item */
+}
+
+/* Adding hover effect to items */
+.dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effects */
+    box-shadow: 0 2px 4px rgba(72, 42, 156, 0.2);
+    /* Slight shadow for 3D look */
+}
+
+/* Hover effect on dropdown items */
+.dropdown-menu li a:hover {
+    background: rgba(14, 27, 202, 0.2);
+    /* Semi-transparent white hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow on hover */
+    transform: translateY(-3px);
+    /* Lift the item slightly on hover */
+    color: #f9f9f9;
+    /* Lighter text color */
+}
+
 /* Hero Section */
 .hero {
     background-image: url('WhatsApp\ Image\ 2024-09-24\ at\ 22.55.04_ae31bb12.jpg');
@@ -733,8 +805,8 @@ html {
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
+    /* background-repeat-x: initial; */
+    /* background-repeat-y: initial; */
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -787,8 +859,10 @@ html {
   
   .contact_us_2 .text-blk.contactus-head {
     font-size: 36px;
+    margin-bottom: 8px;
     line-height: 50px;
     font-weight: 900;
+    background-color: #03a9f4;
   }
   
   .contact_us_2 .text-blk.contactus-subhead {
