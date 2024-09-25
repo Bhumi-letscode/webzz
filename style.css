@@ -53,43 +53,87 @@ header {
     color: #fff;
 }
 
-/* Styles for Dropdown */
-.dropdown {
-    position: relative;
-}
+b
 
+/* Dropdown Menu with 3D Effect and Colorful Design */
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    border-radius: 8px;
-    z-index: 1;
+    background: linear-gradient(145deg, #ff7e5f, #feb47b);
+    /* Gradient Background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(0, 0, 0, 0.1);
+    /* 3D Shadow */
+    border-radius: 10px;
+    width: 280px;
+    padding: 12px 0;
+    z-index: 1000;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Smooth hover animation */
+    opacity: 0;
+    /* Hidden by default */
 }
 
-.dropdown-menu li {
-    list-style: none;
-}
-
-.dropdown-menu li a {
-    padding: 8px 20px;
-    display: block;
-    white-space: nowrap;
-    color: #112434;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #112434;
-    color: #fff;
-    border-radius: 4px;
-}
-
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
+    transform: scale(1);
+    /* Scale to full size on hover */
+    opacity: 1;
+    /* Fade in on hover */
+}
+
+/* Styling dropdown items */
+.dropdown-menu li {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Semi-transparent divider */
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+    /* No border for the last item */
+}
+
+/* Adding hover effect to items */
+.dropdown-menu li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effects */
+    box-shadow: 0 2px 4px rgba(72, 42, 156, 0.2);
+    /* Slight shadow for 3D look */
+}
+
+/* Image/Icon Styling */
+.dropdown-menu li a img {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+}
+
+/* Hover effect on dropdown items */
+.dropdown-menu li a:hover {
+    background: rgba(108, 63, 192, 0.2);
+    /* Semi-transparent white hover effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow on hover */
+    transform: translateY(-3px);
+    /* Lift the item slightly on hover */
+    color: #f9f9f9;
+    /* Lighter text color */
+}
+
+/* Adding 3D depth on hover */
+.dropdown-menu:hover {
+    transform: translateY(-5px);
+    /* Lift the entire dropdown slightly */
 }
 
 
