@@ -24,6 +24,6 @@ You can watch a demo of the project by [clicking here](#). (Include the link to 
 (A screenshot of the platform.)
 
 ## Contributors
-- **Bhumi Gupta**
-- **Divya Chaudhary**
-- **Isha Verma**
+- [**Bhumi Gupta**]()
+- [**Divya Chaudhary**](https://github.com/divyaaachaudhary)
+- [**Isha Verma**]()
