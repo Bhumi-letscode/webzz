@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+    </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Crix</a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Dropdown for Players -->
+            <li class="dropdown">
+                <a href="#">Players</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Country 1</a></li>
+                    <li><a href="#">Country 2</a></li>
+                    <li><a href="#">Country 3</a></li>
+                    <li><a href="#">Country 4</a></li>
+                </ul>
+            </li>
+
+            <!-- Dropdown for Club -->
+            <li class="dropdown">
+                <a href="#">Register</a>
+                <ul class="dropdown-menu">
+                    <li><a href="player.html">Player Registration</a></li>
+                    <li><a href="club.html">Club Registration</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            
+        </div>
+    </section>
+    <section class="welcome">
+        <div class="welcome-content">
+
+            
+            <div class="news-section">
+                <h1 class="title">LATEST NEWS</h1>
+                
+                <div class="news-cards">
+                    <!-- News Card 1 -->
+                    <div class="news-card">
+                        <img src="img1.webp" alt="Thando Ntini">
+                        <div class="news-content">
+                            <h3>Sea Eagles Sign South African Bowling All-Rounder Thando Ntini</h3>
+                            <p>Sea Eagles sign South African bowling all-rounder Thando Ntini, son of Proteas legend Makhaya Ntini. He is an opening bowler who has enjoyed plenty of success during his career to date.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- News Card 2 -->
+                    <div class="news-card">
+                        <img src="img2.webp" alt="Bismillah Khan">
+                        <div class="news-content">
+                            <h3>Watsonian sign Pakistani run machine Bismillah</h3>
+                            <p>Watsonian announces the signing of Pakistani run machine, Bismillah, for their 2024 Eastern Premier League campaign. Bismillah is a wicketkeeper-batter who has played in Pakistan's domestic circuit.</p>
+                        </div>
+                    </div>
+            
+                    <!-- News Card 3 -->
+                    <div class="news-card">
+                        <img src="img3.webp" alt="Nkosana Mpofu">
+                        <div class="news-content">
+                            <h3>Tynedale snap up Tuskers star Nkosana Mpofu</h3>
+                            <p>Tynedale quickly snaps up Zimbabwean domestic star, Nkosana Mpofu, for their 2024 NEPL campaign. Mpofu is an accomplished all-rounder playing for the Tuskers in Zimbabwean domestic cricket.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                <a href="news.html">
+                    <button class="button-64" role="button"><span class="text">Check Latest News</span></button>
+                </a>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+    </section>
+    <section class="opportunities-section">
+        <div class="opportunity opportunity-player">
+            
+        </div>
+
+        <div class="opportunity-divider"></div>
+
+        <div class="opportunity opportunity-club">
+            
+        </div>
+    </section>
+    
+
+    
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Players</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Register</a></li>
+            <li class="menu__item"><a class="menu__link" href="#"> News</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>&copy;2021 CriX Coelho | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            let scrollPosition = window.pageYOffset;
+            document.querySelector('.hero').style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        });
+
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // Horizontal direction for swiping
+            loop: true, // Loop the slides
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 3, // Show 3 slides at once
+            spaceBetween: 20, // Space between slides
+            grabCursor: true, // Show hand cursor when hovering over
+        });
+
+
+    </script>
+
+</body>
+
+
+</html>
