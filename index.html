@@ -157,6 +157,38 @@
         </div>
     </section>
 
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">What services does Crix offer?</h3>
+                    <div class="faq-answer">
+                        <p>Crix offers a wide range of services, including player management, contract negotiation, and
+                            sponsorship acquisition, all designed to support the career growth of professional
+                            cricketers.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How can I contact Crix?</h3>
+                    <div class="faq-answer">
+                        <p>You can contact Crix via our website’s contact form, or by emailing us at info@crix.com.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Who are Crix's clients?</h3>
+                    <div class="faq-answer">
+                        <p>Our clients range from rising stars in cricket to international legends, all of whom trust us
+                            with their career management and endorsements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="followus">
         <div class="follow-content">
             <h1>Follow Us</h1>
@@ -248,6 +280,16 @@
         });
 
 
+    </script>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
     </script>
 
 </body>
