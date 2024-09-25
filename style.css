@@ -5,7 +5,7 @@ body {
     font-family: "Mooli", sans-serif;
 }
 
-/* Styles for Header */
+/* Header styling */
 header {
     position: absolute;
     top: 0;
@@ -53,15 +53,17 @@ header {
     color: #fff;
 }
 
-b
-
 /* Dropdown Menu with 3D Effect and Colorful Design */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background: linear-gradient(145deg, #ff7e5f, #feb47b);
+    background: linear-gradient(145deg, #84b0e2, #b9d7f3);
     /* Gradient Background */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 6px 30px rgba(0, 0, 0, 0.1);
     /* 3D Shadow */
@@ -111,16 +113,9 @@ b
     /* Slight shadow for 3D look */
 }
 
-/* Image/Icon Styling */
-.dropdown-menu li a img {
-    width: 26px;
-    height: 26px;
-    margin-right: 12px;
-}
-
 /* Hover effect on dropdown items */
 .dropdown-menu li a:hover {
-    background: rgba(108, 63, 192, 0.2);
+    background: rgba(14, 27, 202, 0.2);
     /* Semi-transparent white hover effect */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     /* Stronger shadow on hover */
@@ -129,13 +124,6 @@ b
     color: #f9f9f9;
     /* Lighter text color */
 }
-
-/* Adding 3D depth on hover */
-.dropdown-menu:hover {
-    transform: translateY(-5px);
-    /* Lift the entire dropdown slightly */
-}
-
 
 /* Hero Section */
 .hero {
