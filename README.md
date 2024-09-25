@@ -1,7 +1,7 @@
 # CriX: The Ultimate Cricket Platform
 
 ## Description
-CriX is an all-in-one cricket platform that provides the latest updates on cricket players, teams, rankings, and news. Whether you're a fan, a player, or part of a cricket community, CriX offers detailed insights, statistics, and rankings for clubs and players globally. Stay updated with live news, match results, and connect with a community of cricket enthusiasts. CriX is the go-to hub for everything related to cricket.
+CriX is an all-in-one cricket platform that provides the latest updates on cricket players, teams,  and news. Whether you're a fan, a player, or part of a cricket community, CriX offers detailed insights, statistics, and rankings for clubs and players globally. Stay updated with live news, match results, and connect with a community of cricket enthusiasts. CriX is the go-to hub for everything related to cricket.
 
 ### Features:
 - **Cricket News**: Stay informed with the latest news on matches, tournaments, and cricketing events.
@@ -20,7 +20,12 @@ CriX is an all-in-one cricket platform that provides the latest updates on crick
 You can watch a demo of the project by [clicking here](#). (Include the link to the demo video.)
 
 ### Image
-![Project Demo](demo_image.png)  
+**Image1**
+![Project Demo](https://github.com/user-attachments/assets/0acf35ec-9801-4479-b356-8294766d9393)
+**Image2**
+![Project Demo](https://github.com/user-attachments/assets/ad5caede-4b75-4c19-b463-2294a126d461)
+
+ 
 (A screenshot of the platform.)
 
 ## Contributors
