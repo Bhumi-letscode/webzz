@@ -24,6 +24,11 @@ CriX is an all-in-one cricket platform that provides the latest updates on crick
  
 (A screenshot of the platform.)
 
+### Deployment:
+- **Run the clone command:**: git clone https://github.com/username/repository.git
+- **Navigate into the cloned repository:**: cd repository
+- Now go live on local server to see the website.
+
 ## Contributors
 - **Bhumi Gupta**
 - GitHub: https://github.com/Bhumi-letscode 
